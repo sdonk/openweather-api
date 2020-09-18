@@ -1,2 +1,3 @@
-# openweather-api-client
-OpenWeather API client
+# OpenWeather API client
+
+Python client wrapper for [OpenWeather API](https://openweathermap.org/api)
