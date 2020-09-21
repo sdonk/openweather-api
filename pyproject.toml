@@ -1,0 +1,41 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "openweather_api"
+author = "Alessandro De Noia"
+author-email = "alessandro.denoia@gmail.com"
+home-page = "https://github.com/sdonk/openweather-api-client"
+requires = [
+    "requests>=2.24.0",
+    "iso3166>=1.0.1",
+]
+requires-python=">=3.6"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Internet :: WWW/HTTP",
+]
+description-file = "README.md"
+
+[tool.flit.metadata.requires-extra]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-sugar"
+]
+
+[tool.isort]
+profile = "black"
+known_third_party = ["fastapi", "pydantic", "starlette"]
