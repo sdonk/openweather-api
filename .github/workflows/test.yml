@@ -24,6 +24,5 @@ jobs:
       run: pip install flit
     - name: Install Dependencies
       run: flit install --symlink
-    - name: Test with pytest
-      run: |
-        python -m pytest tests
+    - name: Test
+      run: bash test.sh
