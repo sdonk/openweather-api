@@ -38,4 +38,4 @@ test = [
 
 [tool.isort]
 profile = "black"
-known_third_party = ["fastapi", "pydantic", "starlette"]
+known_third_party = ["openweather"]
