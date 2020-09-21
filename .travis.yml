@@ -3,9 +3,13 @@ python:
   - "3.6"
   - "3.7"
   - "3.8"
+before_install:
+  - pip install -U pip
+  - pip install codecov
 install:
-  - pip install --user --upgrade pip
-  - pip install --user -r requirements/travis.txt
-  - pip install --user -e .
+  - pip install -U -r requirements/travis.txt
+  - pip install -e .
 script:
-    - pytest tests --cov
+  - pytest --cov
+after_success:
+  - codecov
