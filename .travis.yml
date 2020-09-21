@@ -7,7 +7,5 @@ install:
   - pip install --user --upgrade pip
   - pip install --user -r requirements/travis.txt
   - pip install --user -e .
-virtualenv:
-  system_site_packages: true
 script:
     - pytest tests --cov
