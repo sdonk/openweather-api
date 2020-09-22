@@ -33,7 +33,8 @@ description-file = "README.md"
 test = [
     "pytest",
     "pytest-cov",
-    "pytest-sugar"
+    "pytest-sugar",
+    "black"
 ]
 
 [tool.isort]
